@@ -1,5 +1,7 @@
 # projection-fit
 
+[![tests](https://github.com/joe-pero/projection-fit/actions/workflows/tests.yml/badge.svg)](https://github.com/joe-pero/projection-fit/actions/workflows/tests.yml)
+
 **Fit projected video onto a real door, window or wall from one phone photo, with no dragging corners by eye.**
 
 | Before: the video spills everywhere | After: fitted to the surface |
