@@ -37,6 +37,21 @@ bumped and you do it again.
 *All pictures here come from a synthetic test scene (`examples/make_demo.py`), so the right
 answer is known exactly. On this scene the corners land within 0.6 projector pixels.*
 
+## How accurate is it?
+
+Measured, not estimated: each test scene is rendered with a known answer, so the error is exact.
+The edge-refinement step (which reads only pixels known to be white on the marker card) cut the
+worst corner error from about 9 pixels to 1.5 or less. Reproduce it with
+`python3 examples/make_accuracy_chart.py`.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/accuracy-dark.png">
+  <img alt="Bar chart of worst corner error on five synthetic scenes. Outline from brightness only: 6.0, 8.3, 7.9, 9.3, 7.6 pixels. With edge refinement: 0.6, 0.6, 1.5, 1.0, 0.9 pixels." src="docs/images/accuracy-light.png">
+</picture>
+
+These are synthetic scenes. Real photos add glare, uneven surfaces and texture, so expect
+somewhat larger errors outdoors; that's exactly what the verify-and-approve step is for.
+
 ## Why a person stays in the loop
 
 The tool is accurate, but it's measuring a photo, and photos can mislead: a reflection, a
