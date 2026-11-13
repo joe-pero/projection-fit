@@ -53,10 +53,12 @@ outside the picture, a shape that isn't a proper four-sided outline) instead of 
 Needs Python 3.9+, and `ffmpeg` for video output.
 
 ```bash
-git clone https://github.com/joe-pero/projection-fit
-cd projection-fit
-pip install -e .
+pip install "git+https://github.com/joe-pero/projection-fit@v1.0.0"
 ```
+
+Or, to work on it: `git clone https://github.com/joe-pero/projection-fit && cd projection-fit && pip install -e .`
+
+Release notes: [CHANGELOG.md](CHANGELOG.md).
 
 ## Use
 
