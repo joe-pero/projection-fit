@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+# your own photos and fits stay local
+card/
+fit/
+*.HEIC
